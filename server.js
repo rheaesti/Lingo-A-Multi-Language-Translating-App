@@ -22,7 +22,7 @@ app.use(express.json());
 
 // Supabase client (server-side) — use Service Role key only (ignore RLS)
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://lmkejdtxdxmkepfogilj.supabase.co';
-const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxta2VqZHR4ZHhta2VwZm9naWxqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NjE3NDQ2MCwiZXhwIjoyMDcxNzUwNDYwfQ.g70mZeLkQM-cnd_t_irrF0-Wwv_xPmk7BqfibQhVEy0";
+const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || "SUPERBASE_SECRETKEY";
 const supabase = SUPABASE_URL && SUPABASE_SERVICE_ROLE_KEY
   ? createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
   : null;
